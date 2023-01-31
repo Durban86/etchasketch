@@ -25,6 +25,7 @@ h1 {
 	display: grid;
 	grid-template-columns: repeat(var(--grid-cols), 1fr) ;
 	grid-template-rows: repeat(var(--grid-rows), 1fr);
+	background-color: #FFF;
 
 }
 
@@ -44,11 +45,47 @@ h1 {
 	color: #C0C0C0;
 }
 
+#pens {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+button {
+	background-color: #FFCCCB;
+	color: #5A5A5A;
+	border: 5px solid #5A5A5A;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.selected {
+	background-color: #FF0044;
+	color: #C0C0C0;
+}
+
+#black:active {
+	background-color: #000;
+	color: #FFF;
+}
+
+#color:active {
+	background-color: #FF0000;
+	color: #FFF;
+}
+
+#shader:active {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #FFF;
+}
+
 .grid-item {
 	border: 1px solid #000;
 	background-color: #FFF;
 }
 
-.color {
+.black {
 	background-color: #000;
 }
